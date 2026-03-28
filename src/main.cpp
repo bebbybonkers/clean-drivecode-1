@@ -86,9 +86,10 @@ void opcontrol() {
 	while(true){
         updateIntake();
         updateLoader();
-        updateWing();
         updateScoring();
         updateTrapdoor();
+		updateWing();
+		
 		chassis.arcade(controller.get_analog(pros::E_CONTROLLER_ANALOG_LEFT_Y),
 		controller.get_analog(pros::E_CONTROLLER_ANALOG_RIGHT_Y));
 		
