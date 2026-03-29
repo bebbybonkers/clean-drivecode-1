@@ -8,7 +8,7 @@ int scoringState = 0;
 bool button2Pressed = false;
 
 void updateScoring() {
-    if(controller.get_digital(pros::E_CONTROLLER_DIGITAL_R2)) {
+    if(controller.get_digital(pros::E_CONTROLLER_DIGITAL_R1)) {
         if(!button2Pressed) {
             scoringState+=1;
             button2Pressed = true;
