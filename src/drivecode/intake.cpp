@@ -16,12 +16,27 @@ void updateIntake() {
                 intake.move_velocity(0);
             } else if(intakeState == 1) {
                 intake.move_velocity(600);
-            } else if(intakeState == 2) {
-                intake.move_velocity(-600);
                 intakeState = -1;
             }
+        } else {
+            button1Pressed = false;
         }
-    } else {
-        button1Pressed = false;
+    }
+}
+
+void updateOuttake() {
+    if(controller.get_digital(pros::E_CONTROLLER_DIGITAL_L2)) {
+        if(!button2Pressed) {
+            outtakeState++;
+            button2Pressed = true;
+            if(outtakeState == 0) {
+                intake.move_velocity(0);
+            } else if(outtakeState == 1) {
+                intake.move_velocity(-600);
+                outtakeState = -1;
+            }
+        } else {
+            button2Pressed = false;
+        }
     }
 }

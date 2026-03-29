@@ -16,12 +16,10 @@ void updateScoring() {
                 scoring.move_velocity(0);
             } else if(scoringState == 1) {
                 scoring.move_velocity(600);
-            } else if(scoringState == 2) {
-                scoring.move_velocity(-600);
                 scoringState = -1;
             }
+        } else {
+            button2Pressed = false;
         }
-    } else {
-        button2Pressed = false;
     }
 }
