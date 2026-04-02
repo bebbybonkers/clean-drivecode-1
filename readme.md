@@ -8,5 +8,5 @@ To turn off a subsystem, such as the intake, press the **same button** again \
 **Trapdoor (Midgoal Scoring)** - X \
 **Descore Wing** - R2 
 
-## Ports
-Ports can be updated from **objects.cpp** easily all in one file, rather than having to go to a new file for each port definition.
+## Ports & Controls
+Ports and subsystem controls can be updated from **objects.cpp** easily all in one file, rather than having to go to a new file for each port or control definition.

@@ -8,7 +8,7 @@ bool trapdoorButtonPressed = false;
 
 // trapdoor uses state system
 void updateTrapdoor() {
-    if(controller.get_digital(pros::E_CONTROLLER_DIGITAL_X)) { 
+    if(controller.get_digital(trapdoorButton)) { 
         if(!trapdoorButtonPressed) {
             trapdoorState++;
             trapdoorButtonPressed = true;

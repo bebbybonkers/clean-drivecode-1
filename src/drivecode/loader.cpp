@@ -9,7 +9,7 @@ bool loaderButtonPressed = false;
 
 //matchloader updates based on state
 void updateLoader() {
-    if(controller.get_digital(pros::E_CONTROLLER_DIGITAL_UP)){
+    if(controller.get_digital(loaderButton)) {
         if(!loaderButtonPressed) {
             loaderState++;
             loaderButtonPressed = true;

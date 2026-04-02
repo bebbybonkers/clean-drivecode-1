@@ -9,7 +9,7 @@ bool scoringPressed = false;
 
 //scoring updates based on state
 void updateScoring() {
-    if(controller.get_digital(pros::E_CONTROLLER_DIGITAL_R1)) {
+    if(controller.get_digital(scoringButton)) {
         if(!scoringPressed) {
             scoringState+=1;
             scoringPressed = true;

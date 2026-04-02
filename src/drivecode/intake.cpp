@@ -9,7 +9,7 @@ bool intakePressed = false;
 
 //intake updates based on state
 void updateIntake() {
-    if(controller.get_digital(pros::E_CONTROLLER_DIGITAL_L1)) {
+    if(controller.get_digital(intakeButton)) {
         if(!intakePressed) {
             intakeState+=1;
             intakePressed = true;
@@ -30,7 +30,7 @@ bool outtakePressed = false;
 
 // outtake updates based on state
 void updateOuttake() {
-    if(controller.get_digital(pros::E_CONTROLLER_DIGITAL_L2)) {
+    if(controller.get_digital(outtakeButton)) {
         if(!outtakePressed) {
             outtakeState++;
             outtakePressed = true;

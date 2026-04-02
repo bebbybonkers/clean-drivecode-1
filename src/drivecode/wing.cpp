@@ -8,7 +8,7 @@ bool wingButtonPressed = false;
 
 //uses state system
 void updateWing() {
-    if(controller.get_digital(pros::E_CONTROLLER_DIGITAL_R2)) { 
+    if(controller.get_digital(wingButton)) { 
         if(!wingButtonPressed) {
             wingState++;
             wingButtonPressed = true;
