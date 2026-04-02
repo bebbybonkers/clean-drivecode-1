@@ -13,8 +13,6 @@ extern pros::Controller controller;
 extern pros::adi::AnalogOut piston;
 
 // ports
-extern int leftMotorPorts[];
-extern int rightMotorPorts[];
 extern int intakePort;
 extern int scoringPort;
 extern char trapdoorPort;
