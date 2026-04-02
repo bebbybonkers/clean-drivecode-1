@@ -2,7 +2,7 @@
 #include "drivecode/objects.hpp"
 //matchloader
 
-pros::adi::AnalogOut loader('A');
+pros::adi::AnalogOut loader(loaderPort);
 
 int loaderState = 0;
 bool loaderButtonPressed = false;

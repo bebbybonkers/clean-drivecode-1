@@ -2,7 +2,7 @@
 #include "drivecode/objects.hpp"
 // intake + outtake
 
-pros::Motor intake(0);
+pros::Motor intake(intakePort);
 
 int intakeState = 0;
 bool button1Pressed = false;

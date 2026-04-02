@@ -1,7 +1,7 @@
 #include "drivecode/trapdoor.hpp"
 #include "drivecode/objects.hpp"
 // trapdoor code (switch to midgoal scoring)
-pros::adi::AnalogOut trapdoor('A');
+pros::adi::AnalogOut trapdoor(trapdoorPort);
 
 int trapdoorState = 0;
 bool trapdoorButtonPressed = false;

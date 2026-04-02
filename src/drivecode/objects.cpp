@@ -1,4 +1,16 @@
 #include "drivecode/objects.hpp"
+
+
+// ports - adjusting these will change the ports that the code uses for each subsystem
+int leftMotorPorts[3] = {0,0,0};
+int rightMotorPorts[3] = {0,0,0};
+int intakePort = 0;
+int scoringPort = 0;
+char trapdoorPort = 'A';
+char wingPort = 'A';
+char loaderPort = 'A';
+
+
 // controller defintion
 pros::Controller controller(pros::E_CONTROLLER_MASTER);
 // motor groups and for drivetrain

@@ -2,7 +2,7 @@
 #include "drivecode/objects.hpp"
 // scoring - the last motor to score into long goals
 
-pros::Motor scoring(0);
+pros::Motor scoring(scoringPort);
 
 int scoringState = 0;
 bool button2Pressed = false;

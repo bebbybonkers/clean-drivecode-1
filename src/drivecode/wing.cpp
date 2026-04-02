@@ -1,7 +1,7 @@
 #include "drivecode/wing.hpp"
 #include "drivecode/objects.hpp"
 //descore wing code
-pros::adi::AnalogOut wing('A'); 
+pros::adi::AnalogOut wing(wingPort); 
 
 int wingState = 0;
 bool wingButtonPressed = false;

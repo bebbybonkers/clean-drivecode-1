@@ -6,5 +6,6 @@ To turn off a subsystem, such as the intake, press the same button again
 **Outtake on** - L2
 **Matchloader** - Up
 **Outtake (Long Goal)** - R1
-**Descore Wing** - R2
 **Trapdoor (Midgoal Scoring)** - X
+**Descore Wing** - R2
+
